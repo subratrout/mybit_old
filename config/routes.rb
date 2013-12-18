@@ -1,4 +1,8 @@
 Mybit::Application.routes.draw do
+  resources :collaborators
+
+  resources :members
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

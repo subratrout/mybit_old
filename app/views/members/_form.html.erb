@@ -1,0 +1,73 @@
+<%= form_for(@member) do |f| %>
+  <% if @member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@member.errors.count, "error") %> prohibited this member from being saved:</h2>
+
+      <ul>
+      <% @member.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br>
+    <%= f.date_select :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :location_place %><br>
+    <%= f.text_field :location_place %>
+  </div>
+  <div class="field">
+    <%= f.label :household_size %><br>
+    <%= f.number_field :household_size %>
+  </div>
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.text_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :pran %><br>
+    <%= f.text_field :pran %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :monthly_income %><br>
+    <%= f.text_field :monthly_income %>
+  </div>
+  <div class="field">
+    <%= f.label :pension_saving %><br>
+    <%= f.text_field :pension_saving %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation_id %><br>
+    <%= f.text_field :occupation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :partner_id %><br>
+    <%= f.text_field :partner_id %>
+  </div>
+  <div class="field">
+    <%= f.label :location_state_id %><br>
+    <%= f.text_field :location_state_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
