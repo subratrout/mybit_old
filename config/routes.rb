@@ -1,4 +1,7 @@
 Mybit::Application.routes.draw do
+  
+  root :to => 'members#index'
+
   resources :collaborators
 
   resources :members
