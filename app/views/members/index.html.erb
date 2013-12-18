@@ -34,7 +34,7 @@
         <td><%= member.household_size %></td>
         <td><%= member.uid %></td>
         <td><%= member.pran %></td>
-        <td><%= member.image %></td>
+        <td><%= image_tag member.avatar.url(:medium) %></td>
         <td><%= member.monthly_income %></td>
         <td><%= member.pension_saving %></td>
         <td><%= member.occupation %></td>
