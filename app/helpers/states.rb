@@ -1,4 +1,5 @@
-module ApplicationHelper
+module Stateshelper
+
 	def india_states
 		[
 			['Andhra Pradesh', 'AP'],
@@ -38,5 +39,4 @@ module ApplicationHelper
 			['Puducherry','PY']
 		]
 	end
-	
 end

@@ -14,9 +14,8 @@
       <th>Image</th>
       <th>Monthly income</th>
       <th>Pension saving</th>
-      <th>Occupation</th>
-      <th>Partner</th>
-      <th>Location state</th>
+      <th>City</th>
+      <th>State</th>
       <th></th>
       <th></th>
       <th></th>
@@ -37,9 +36,8 @@
         <td><%= image_tag member.avatar.url(:medium) %></td>
         <td><%= member.monthly_income %></td>
         <td><%= member.pension_saving %></td>
-        <td><%= member.occupation %></td>
-        <td><%= member.partner %></td>
-        <td><%= member.location_state %></td>
+        <td><%= member.city %></td>
+        <td><%= member.state %></td>
         <td><%= link_to 'Show', member %></td>
         <td><%= link_to 'Edit', edit_member_path(member) %></td>
         <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>

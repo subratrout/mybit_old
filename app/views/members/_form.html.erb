@@ -28,9 +28,20 @@
     <%= f.text_field :gender %>
   </div>
   <div class="field">
-    <%= f.label :location_place %><br>
+    <%= f.label :location %><br>
     <%= f.text_field :location_place %>
   </div>
+
+    <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= select_tag :state, options_for_select(india_states) %>
+  </div>
+
   <div class="field">
     <%= f.label :household_size %><br>
     <%= f.number_field :household_size %>
@@ -55,18 +66,8 @@
     <%= f.label :pension_saving %><br>
     <%= f.text_field :pension_saving %>
   </div>
-  <div class="field">
-    <%= f.label :occupation_id %><br>
-    <%= f.text_field :occupation_id %>
-  </div>
-  <div class="field">
-    <%= f.label :partner_id %><br>
-    <%= f.text_field :partner_id %>
-  </div>
-  <div class="field">
-    <%= f.label :location_state_id %><br>
-    <%= f.text_field :location_state_id %>
-  </div>
+  
+
   <div class="actions">
     <%= f.submit %>
   </div>

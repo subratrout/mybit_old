@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131218163410) do
+ActiveRecord::Schema.define(version: 20131218191313) do
 
   create_table "collaborators", force: true do |t|
     t.string   "partner"
@@ -46,6 +46,8 @@ ActiveRecord::Schema.define(version: 20131218163410) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "city"
+    t.string   "state"
   end
 
   add_index "members", ["location_state_id"], name: "index_members_on_location_state_id"
