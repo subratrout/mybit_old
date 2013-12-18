@@ -27,7 +27,10 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem "figaro", ">= 0.5.3"
 
 
-
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
