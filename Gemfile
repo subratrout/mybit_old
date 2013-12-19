@@ -24,6 +24,7 @@ gem 'sidekiq'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "figaro", ">= 0.5.3"
 gem 'paperclip', '~> 3.0'
+gem 'aws-sdk', '~> 1.20.0'
 
 
 group :production do
@@ -59,6 +60,7 @@ group :development do
  gem 'sidekiq'
  gem 'activeadmin', github: 'gregbell/active_admin'
  gem 'paperclip', '~> 3.0'
+ gem 'aws-sdk', '~> 1.20.0'
 end
 
 
