@@ -13,13 +13,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'coffee-rails', '~>4.0.0'
 gem 'pg_search', "~> 0.7.0"
-gem 'carrierwave', "~>0.9.0"
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'rmagick'
-gem 'mini_magick'
-gem 'fog'
-gem 'carrierwave_direct'
 gem 'sidekiq'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "figaro", ">= 0.5.3"
@@ -53,10 +48,6 @@ group :development do
  gem 'factory_girl_rails', '4.2.1'
  gem 'roo'
  gem 'pg_search', "~> 0.7.0"
- gem 'carrierwave', "~>0.9.0"
- gem 'mini_magick'
- gem 'fog'
- gem 'carrierwave_direct'
  gem 'sidekiq'
  gem 'activeadmin', github: 'gregbell/active_admin'
  gem 'paperclip', '~> 3.0'
